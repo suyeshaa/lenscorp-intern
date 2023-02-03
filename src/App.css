@@ -1,38 +1,258 @@
-.App {
+
+body{
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navContainer-fixed{
+  background-color: white;
+
+}
+
+.homepage{
+  width: 80%;
+}
+
+.nav{
+  display: flex;
+  /* padding: 21px 0px; */
+  padding: 21px 80px;
+  justify-content: space-between;
+  align-items: center;
+  transition: .3s ease-in-out;
+  z-index: 10;
+  /* position: fixed; */
+}
+
+.nav-fixed{
+  display: flex;
+  position: fixed;
+  padding: 21px 80px;
+  justify-content: space-between;
+  align-items: center;
+  transition: .3s ease-in-out;
+  width: 91%;
+  background-color: white;
+  z-index: 10;
+
+}
+
+
+
+.options{
+  display: flex;
+}
+
+.optn{
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.optn:hover{
+  font-weight: 600;
+}
+
+.body{
+  padding: 50px 20px;
+  margin:auto;
+  line-height:2;
+  display: flex;
+  margin-top: 78.59px;
+  justify-content: space-around;
+  /* position: relative; */
+}
+
+.content{
+  max-width: 55%;
+}
+
+
+
+.body h2{
+  /* padding:20px 0 ; */
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+}
+.body p{
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+.header{
+  background-image: url("https://www.lenscorp.ai/_next/static/media/gradient.612677ae.jpg");
+  margin: auto;
+  height: 80vh;
+}
+
+.header h1{
+  font-size: 55px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.header-contents{
+  max-width: 50%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 8%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.by-date{
+  display: flex;
+  padding: 40px ;
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.by{
+  padding: 0px 10px 0px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.date{
+  padding: 0px 0px 0px 10px;
+}
+
+.footer{
+  background-image: url("https://www.lenscorp.ai/_next/static/media/gradient.612677ae.jpg");
+  align-items: center;
+  padding: 80px 100px;
+}
+
+.sections{
+  display: flex;
+  justify-content: space-between;
+  align-items:baseline;
+  padding-bottom: 50px;
+}
+
+
+.sections h2{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+.sections .contacts {
+  font-size: 14px;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contacts a {
+  padding: 0 10px 0 0;
+}
+
+.addr{
+  margin: 0 0 0 10px;
+}
+
+.sitemap-optn{
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.tagline p{
+  /* font-size: 20px ; */
+  font-weight: 500;
+}
+
+.btm{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+hr{
+  /* color: red; */
+  border: 0.5px solid rgba(240, 245, 240, 0.295);
+}
+
+.links a{
+  padding: 0px 10px;
+}
+
+.code-goals a{
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+
+ .progressBarContainer{
+  position: fixed;
+  z-index: 10;
+  background: white;
+  width: 100%;
+  top: 79px;
+  left: 0;
+
+ }
+
+ .progressBar{
+  background: linear-gradient(to left , rgb(238, 112, 133) , rgb(81, 57, 221));
+  transform-origin: top left;
+  transform: scale(0,0);
+  opacity: 0;
+
+ }
+
+ .progressBarContainer, .progressBar{
+  height: 3px;
+ }
+
+.index{
+  position: relative;
+}
+
+ .idx{
+  position: sticky;
+  font-weight: 500;
+  top: 100px;
+ }
+
+
+ .idx1:hover,.idx2:hover{
+  font-weight: 600;
+  cursor: pointer;
+ }
+ 
+
+ .side-links{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .sd-l{
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 100px;
+  z-index: -1;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+ .contacts:hover{
+  font-weight: 600;
+  cursor: pointer;
+ }
+
+ .sitemap-optn:hover{
+  font-weight: 600;
+  cursor: pointer;
+ }
+
+ .code-goals a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+ }
+
+ .code-img{
+  width: 100%;
+  padding-bottom: 50px;
+ }
